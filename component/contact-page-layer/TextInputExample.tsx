@@ -25,7 +25,7 @@ const TextInputExample: React.FC = () => {
 
   return (
     <View style={{flex: 2, flexDirection: 'column'}}>
-        <View style={{marginLeft: 200, marginTop: 100 }}>
+        <View style={{marginLeft: 200, marginTop: 120 }}>
                 <View style = {{flex:1, flexDirection: 'row'}}>
                     <TextInput
                         style={styles.input1}

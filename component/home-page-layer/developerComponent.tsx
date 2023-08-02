@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
-
+import TextRotator from './TextRotator';
 
 
 const DeveloperComponent = () => {
@@ -8,7 +8,10 @@ const DeveloperComponent = () => {
         <View style={styles.container}>
           <Text style={styles.text1}>Hello, </Text>
           <Text style={styles.text2}>I'm Vidumina </Text>
-          <Text style={styles.text3}>Web Designer & Developer </Text>
+          {/* <Text style={styles.text3}>Web Designer & Developer </Text> */}
+          <View>
+            <TextRotator/>
+          </View>
             <View style = {{marginTop: 40, marginLeft: 230}}>
               <TouchableOpacity style={styles.button}>
                 <Text style={styles.buttonText}>View Works</Text>

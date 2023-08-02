@@ -9,7 +9,7 @@ import ContactText from './contactText';
 const ContactBackground = () => {
   return (
     <View>
-      <View style={{width: 1350, height: 650, backgroundColor: '#121212',}}>
+      <View style={{width: 1350, height: 600, backgroundColor: '#121212',}}>
             <View style={{flex:2,flexDirection:'row'}}>
               <ContactText/>
               <TextInputExample/>

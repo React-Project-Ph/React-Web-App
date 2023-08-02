@@ -8,7 +8,7 @@ import CardComponent from './CardComponent';
 const SkillBackground = () => {
   return (
     <View>
-      <View style={{ width: 1350, height: 650, backgroundColor: '#121212'}}>
+      <View style={{ width: 1350, height: 600, backgroundColor: '#121212'}}>
             <View >
                <Text style={styles.text1}>My Skills</Text>
             </View> 
@@ -44,6 +44,7 @@ const styles = StyleSheet.create({
         fontWeight: '700',
         marginLeft: 150,
         //marginTop:20,
+        marginBottom:30
     },
 
     text2: {

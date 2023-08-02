@@ -1,6 +1,15 @@
 import React from 'react';
 import { View, Text, StyleSheet, ScrollView, Image } from 'react-native';
-import myImage from '../assets/react.png'; 
+import reactImage from '../assets/react.png'; 
+import pythonImage from '../assets/python.png'; 
+import CImage from '../assets/C++.png'; 
+import cssImage from '../assets/css.png'; 
+import htmlImage from '../assets/hmtl.png'; 
+import javaImage from '../assets/java.png'; 
+import mongodbImage from '../assets/mongodb.png'; 
+import mysqlImage from '../assets/mysql.png'; 
+import nodeImage from '../assets/node.png'; 
+
 
 const CardComponent: React.FC = () => {
   return (
@@ -9,33 +18,110 @@ const CardComponent: React.FC = () => {
          <ScrollView>
            <View style={styles.card1}>
               <View style = {{flex:2, flexDirection:'row'}}>
-                <Image source={myImage} style={styles.image} />
-                <View style = {{flex:1, flexDirection:'column'}}>
-                  <Text style={styles.title}>Card Title</Text>
-                  <Text style={styles.description}>This is the card description.</Text> 
+                <Image source={reactImage} style={styles.image} />
+                <View style = {{flex:1, flexDirection:'row'}}>
+                  <Text style={styles.title}>React Native</Text>
+                  <Text style={styles.description}> 90 %</Text> 
                 </View>
               </View>
            </View>
+
            <View style={styles.card1}>
-              <Text style={styles.title}>Card Title</Text>
-              <Text style={styles.description}>This is the card description.</Text> 
+              <View style = {{flex:2, flexDirection:'row'}}>
+                <Image source={htmlImage} style={styles.image} />
+                <View style = {{flex:1, flexDirection:'row'}}>
+                  <Text style={styles.title}>HTML</Text>
+                  <View style={{marginLeft:50}}>
+                  <Text style={styles.description}> 98 %</Text> 
+                  </View>
+                </View>
+              </View>
            </View>
+
            <View style={styles.card1}>
-              <Text style={styles.title}>Card Title</Text>
-              <Text style={styles.description}>This is the card description.</Text> 
+              <View style = {{flex:2, flexDirection:'row'}}>
+                <Image source={CImage} style={styles.image} />
+                <View style = {{flex:1, flexDirection:'row'}}>
+                  <Text style={styles.title}>C++ </Text>
+                  <View style={{marginLeft:70}}>
+                  <Text style={styles.description}> 80 %</Text> 
+                  </View>
+                </View>
+              </View>
            </View>
+
            <View style={styles.card1}>
-              <Text style={styles.title}>Card Title</Text>
-              <Text style={styles.description}>This is the card description.</Text> 
+              <View style = {{flex:2, flexDirection:'row'}}>
+                <Image source={javaImage} style={styles.image} />
+                <View style = {{flex:1, flexDirection:'row'}}>
+                  <Text style={styles.title}>Java </Text>
+                  <View style={{marginLeft:70}}>
+                  <Text style={styles.description}> 85 %</Text> 
+                  </View>
+                </View>
+              </View>
            </View>
+
            <View style={styles.card1}>
-              <Text style={styles.title}>Card Title</Text>
-              <Text style={styles.description}>This is the card description.</Text> 
+              <View style = {{flex:2, flexDirection:'row'}}>
+                <Image source={pythonImage} style={styles.image} />
+                <View style = {{flex:1, flexDirection:'row'}}>
+                  <Text style={styles.title}>python </Text>
+                  <View style={{marginLeft:43}}>
+                  <Text style={styles.description}> 85 %</Text> 
+                  </View>
+                </View>
+              </View>
            </View>
+
            <View style={styles.card1}>
-              <Text style={styles.title}>Card Title</Text>
-              <Text style={styles.description}>This is the card description.</Text> 
+              <View style = {{flex:2, flexDirection:'row'}}>
+                <Image source={cssImage} style={styles.image} />
+                <View style = {{flex:1, flexDirection:'row'}}>
+                  <Text style={styles.title}>CSS</Text>
+                  <View style={{marginLeft:72}}>
+                  <Text style={styles.description}> 80 %</Text> 
+                  </View>
+                </View>
+              </View>
            </View>
+
+           <View style={styles.card1}>
+              <View style = {{flex:2, flexDirection:'row'}}>
+                <Image source={nodeImage} style={styles.image} />
+                <View style = {{flex:1, flexDirection:'row'}}>
+                  <Text style={styles.title}>Node JS</Text>
+                  <View style={{marginLeft:35}}>
+                  <Text style={styles.description}> 75 %</Text> 
+                  </View>
+                </View>
+              </View>
+           </View>
+
+           <View style={styles.card1}>
+              <View style = {{flex:2, flexDirection:'row'}}>
+                <Image source={mongodbImage} style={styles.image} />
+                <View style = {{flex:1, flexDirection:'row'}}>
+                  <Text style={styles.title}>Mongo DB</Text>
+                  <View style={{marginLeft:15}}>
+                  <Text style={styles.description}> 80 %</Text> 
+                  </View>
+                </View>
+              </View>
+           </View>
+
+           <View style={styles.card1}>
+              <View style = {{flex:2, flexDirection:'row'}}>
+                <Image source={mysqlImage} style={styles.image} />
+                <View style = {{flex:1, flexDirection:'row'}}>
+                  <Text style={styles.title}>Mysql DB</Text>
+                  <View style={{marginLeft:20}}>
+                  <Text style={styles.description}> 90 %</Text> 
+                  </View>
+                </View>
+              </View>
+           </View>
+           
           </ScrollView> 
         </View> 
     </View>
@@ -47,15 +133,15 @@ const styles = StyleSheet.create({
   image: {
     //marginTop: 70,
     width: 70,
-    height: 70,
-    borderRadius: 66,
-    marginLeft:30,
+    height: 60,
+   // borderRadius: 66,
+    marginLeft:20,
   },
 
   card1: {
     width: 420,
     height: 80,
-    backgroundColor: '#fff',
+    backgroundColor: '#D1F2EB',
     borderRadius: 8,
     padding: 16,
     margin: 8,
@@ -68,7 +154,8 @@ const styles = StyleSheet.create({
 
   card2: {
     width: 500,
-    height: 500,
+    height: 400,
+    marginTop: 30,
     backgroundColor: '#333333',
     borderRadius: 8,
     padding: 16,
@@ -81,12 +168,23 @@ const styles = StyleSheet.create({
   },
 
   title: {
-    fontSize: 18,
+    fontFamily: 'Poppins',
+    fontSize: 22,
     fontWeight: 'bold',
-    marginBottom: 8,
+    //marginBottom: 8,
+    marginLeft:40,
+    marginTop:14
+    
   },
+
   description: {
-    fontSize: 16,
+    fontFamily: 'Poppins',
+    fontSize: 22,
+    fontWeight: 'bold',
+    marginLeft:40,
+    marginTop:14
+    
+  
   },
 });
 
