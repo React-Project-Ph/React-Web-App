@@ -1,24 +1,77 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { Link } from 'react-scroll';
+
+
 
 class MyComponent extends Component {
   render() {
     return (
       <View style={styles.baseText} >
         <View style={{marginLeft:360}}>
-        <Text style={styles.baseText1}>Home</Text>
+          <TouchableOpacity>
+            <Link activeClass="active"
+              to="homeSection" 
+              spy={true}
+              smooth={true}
+              offset={-70} 
+              duration={500}
+            >
+              <Text style={styles.baseText1}>Home</Text>
+            </Link>
+         </TouchableOpacity>
         </View>
         <View style={{marginLeft:50}}>
-        <Text style={styles.baseText1}>Skill</Text>
+        <TouchableOpacity>
+            <Link activeClass="active"
+              to="aboutSection" 
+              spy={true}
+              smooth={true}
+              offset={-70} 
+              duration={500}
+            >
+              <Text style={styles.baseText1}>About</Text>
+            </Link>
+         </TouchableOpacity>
         </View>
         <View style={{marginLeft:50}}>
-        <Text style={styles.baseText1}>About</Text>
+        <TouchableOpacity>
+            <Link activeClass="active"
+              to="skillSection" 
+              spy={true}
+              smooth={true}
+              offset={-70} 
+              duration={500}
+            > 
+              <Text style={styles.baseText1}>Skills</Text>
+            </Link>
+         </TouchableOpacity>
         </View>
         <View style={{marginLeft:50}}>
-        <Text style={styles.baseText1}>Project</Text>
+        <TouchableOpacity>
+            <Link activeClass="active"
+              to="projectSection" 
+              spy={true}
+              smooth={true}
+              offset={-70} 
+              duration={500}
+            >
+              <Text style={styles.baseText1}>Project</Text>
+            </Link>
+         </TouchableOpacity>
         </View>
         <View style={{marginLeft:50}}>
-        <Text style={styles.baseText1}>Contact</Text>
+        <TouchableOpacity>
+            <Link activeClass="active"
+              to="contactSection" 
+              spy={true}
+              smooth={true}
+              offset={-70} 
+              duration={500}
+            >
+              <Text style={styles.baseText1}>Contact</Text>
+            </Link>
+         </TouchableOpacity>
         </View>
         <View style={{marginLeft:275, marginTop: -10}}>
         <TouchableOpacity style={styles.button}>

@@ -8,7 +8,7 @@ const ProjectBackground = () => {
     <View>
       <View style={{width: 1350, height: 650, backgroundColor: '#121212' }}>
         <View >
-               <Text style={styles.text1}>My Projects</Text>
+               <Text style={styles.text1} id="projectSection">My Projects</Text>
         </View> 
         <View style = {{marginTop:50}}>
             <HorizontalCardScroll/>

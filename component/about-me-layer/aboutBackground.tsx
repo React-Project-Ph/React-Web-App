@@ -12,7 +12,7 @@ const AboutBackgroud = () => {
           backgroundColor: '#121212',
         }}>
         <View style={{flex:1,flexDirection:'column'}}>
-          <Text style={styles.text1}>About Me</Text>
+          <Text style={styles.text1} id="aboutSection">About Me</Text>
           <Text style={styles.text2}>For more than 5 years now, design has been the central piece of my world. On this fast and mind-blowing journey, I have moved over the years from being a visual designer to a full-time UX/UI thinker and designer. At the moment, this journey has brought me to Cloud Academy in Mendrisio, Switzerland where I am a full-time Product Designer. In this position, as with freelance, I am working remotely and I have been for approximately two years.</Text>
           <Text style={styles.text2}>For more than 5 years now, design has been the central piece of my world. On this fast and mind-blowing journey, I have moved over the years from being a visual designer to a full-time UX/UI thinker and designer. At the moment, this journey has brought me to Cloud Academy in Mendrisio, Switzerland where I am a full-time Product Designer. In this position, as with freelance, I am working remotely and I have been for approximately two years.</Text>
           <View style = {{flex:1, flexDirection:'row', marginLeft: 700, marginTop: 40}}>

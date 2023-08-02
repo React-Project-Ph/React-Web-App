@@ -53,18 +53,35 @@ const styles = StyleSheet.create({
 
 
 
-
-
-
 // import React from 'react';
-// import { View, StyleSheet } from 'react-native';
-
-// import VideoPlayer from './VideoPlayer';
+// import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+// import { Link } from 'react-scroll';
 
 // const App: React.FC = () => {
 //   return (
 //     <View style={styles.container}>
-//       <VideoPlayer />
+//       <View style={styles.navBar}>
+//         <TouchableOpacity>
+//           <Link activeClass="active"
+//             to="aboutSection" 
+//             spy={true}
+//             smooth={true}
+//             offset={-70} 
+//             duration={500}
+//           >
+//             <Text style={styles.navBarItem}>About</Text>
+//           </Link>
+//         </TouchableOpacity>
+//       </View>
+
+//       <View style={styles.content}>
+//         <Text>Content goes here. </Text>
+//       </View>
+
+//       {/* The "about me" section with ID "aboutSection" */}
+//       <View style={styles.aboutSection} id="aboutSection">
+//         <Text style={styles.sectionText}>This is the about me section</Text>
+//       </View>      
 //     </View>
 //   );
 // };
@@ -72,13 +89,38 @@ const styles = StyleSheet.create({
 // const styles = StyleSheet.create({
 //   container: {
 //     flex: 1,
+//     backgroundColor: '#f0f0f0',
+//   },
+//   navBar: {
+//     height: 50,
+//     backgroundColor: '#333',
 //     justifyContent: 'center',
 //     alignItems: 'center',
-//     backgroundColor: '#f2f2f2',
+//   },
+//   navBarItem: {
+//     color: '#fff',
+//     fontSize: 18,
+//   },
+//   content: {
+//     padding: 20,
+//   },
+//   aboutSection: {
+//     padding: 20,
+//     backgroundColor: '#fff',
+//   },
+//   sectionText: {
+//     fontSize: 24,
+//     fontWeight: 'bold',
 //   },
 // });
 
 // export default App;
+
+
+
+
+
+
 
 
 

@@ -10,7 +10,7 @@ const SkillBackground = () => {
     <View>
       <View style={{ width: 1350, height: 600, backgroundColor: '#121212'}}>
             <View >
-               <Text style={styles.text1}>My Skills</Text>
+               <Text style={styles.text1} id="skillSection">My Skills</Text>
             </View> 
             <View style={{flex:2, flexDirection:'row'}}>
               <View style={{flex:2,flexDirection:'column'}}>

@@ -6,7 +6,7 @@ import TextRotator from './TextRotator';
 const DeveloperComponent = () => {
   return (
         <View style={styles.container}>
-          <Text style={styles.text1}>Hello, </Text>
+          <Text style={styles.text1} id="homeSection">Hello, </Text>
           <Text style={styles.text2}>I'm Vidumina </Text>
           {/* <Text style={styles.text3}>Web Designer & Developer </Text> */}
           <View>

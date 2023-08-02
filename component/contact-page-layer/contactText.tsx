@@ -5,7 +5,7 @@ import { View, Text, StyleSheet,  } from 'react-native';
 const ContactText: React.FC = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.text1}>Contact Me</Text>
+      <Text style={styles.text1} id="contactSection">Contact Me</Text>
         <View>
         <Text style={styles.text2}>Address</Text>
         <Text style={styles.text3}>No: 294, Minuwangoda  Rd,  Asgiriya,  Gampaha.</Text>
