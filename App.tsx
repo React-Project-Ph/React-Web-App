@@ -53,35 +53,46 @@ const styles = StyleSheet.create({
 
 
 
+
+
+// // import React from 'react';
+// // import { View, StyleSheet } from 'react-native';
+// // import vid from './assets/video.mp4';
+// // import Video from 'react-native-video';
+
+// // const App: React.FC = () => {
+// //   // const videoUrl = 'https://drive.google.com/drive/u/0/my-drive'; // Replace with your Google Drive video URL
+
+// //   return (
+// //     <View style={styles.container}>
+// //       {/* <VideoPlayer videoUrl={videoUrl} /> */}
+// //       <Video
+// //         source={vid} // Replace 'your_video.mp4' with your video file's name and path
+// //         style={{ flex: 1 }}
+// //         resizeMode="contain"
+// //         controls={true} // Set to false if you don't want to display video controls
+// //       />
+// //     </View>
+// //   );
+// // };
+
+// // const styles = StyleSheet.create({
+// //   container: {
+// //     flex: 1,
+// //   },
+// // });
+
+// // export default App;
+
+
 // import React from 'react';
-// import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
-// import { Link } from 'react-scroll';
+// import { View, Image, StyleSheet } from 'react-native';
+// import gif from './assets/stdy.gif'; // Replace with the correct path to your GIF file
 
 // const App: React.FC = () => {
 //   return (
 //     <View style={styles.container}>
-//       <View style={styles.navBar}>
-//         <TouchableOpacity>
-//           <Link activeClass="active"
-//             to="aboutSection" 
-//             spy={true}
-//             smooth={true}
-//             offset={-70} 
-//             duration={500}
-//           >
-//             <Text style={styles.navBarItem}>About</Text>
-//           </Link>
-//         </TouchableOpacity>
-//       </View>
-
-//       <View style={styles.content}>
-//         <Text>Content goes here. </Text>
-//       </View>
-
-//       {/* The "about me" section with ID "aboutSection" */}
-//       <View style={styles.aboutSection} id="aboutSection">
-//         <Text style={styles.sectionText}>This is the about me section</Text>
-//       </View>      
+//       <Image source={gif} style={styles.gif} />
 //     </View>
 //   );
 // };
@@ -89,34 +100,79 @@ const styles = StyleSheet.create({
 // const styles = StyleSheet.create({
 //   container: {
 //     flex: 1,
-//     backgroundColor: '#f0f0f0',
-//   },
-//   navBar: {
-//     height: 50,
-//     backgroundColor: '#333',
 //     justifyContent: 'center',
 //     alignItems: 'center',
 //   },
-//   navBarItem: {
-//     color: '#fff',
-//     fontSize: 18,
-//   },
-//   content: {
-//     padding: 20,
-//   },
-//   aboutSection: {
-//     padding: 20,
-//     backgroundColor: '#fff',
-//   },
-//   sectionText: {
-//     fontSize: 24,
-//     fontWeight: 'bold',
+//   gif: {
+//     width: 200,
+//     height: 200,
 //   },
 // });
 
 // export default App;
 
 
+// import React from 'react';
+// import { View, TouchableOpacity, Text, StyleSheet } from 'react-native';
+
+// const App: React.FC = () => {
+//   const pdfUrl = 'https://drive.google.com/file/d/1VhneOOo9hIxKNEo5TNDH4jlnyAvEQkwb/view?usp=drive_link'; // Replace with the actual PDF URL
+
+//   const handleDownloadPDF = () => {
+//     const link = document.createElement('a');
+//     link.href = pdfUrl;
+//     link.download = 'downloaded-file.pdf';
+//     link.target = '_blank'; // Add this line for React Native web
+//     document.body.appendChild(link);
+//     link.click();
+//     document.body.removeChild(link);
+//   };
+
+//   return (
+//     <View style={styles.container}>
+//       <TouchableOpacity onPress={handleDownloadPDF}>
+//         <Text style={styles.buttonText}>Download PDF</Text>
+//       </TouchableOpacity>
+//     </View>
+//   );
+// };
+
+// const styles = StyleSheet.create({
+//   container: {
+//     flex: 1,
+//     justifyContent: 'center',
+//     alignItems: 'center',
+//   },
+//   buttonText: {
+//     fontSize: 18,
+//     color: 'blue',
+//   },
+// });
+
+// export default App;
+
+
+// import React from 'react'
+// import ReactPlayer from 'react-player'
+// import { View, StyleSheet } from 'react-native';
+
+// const App: React.FC = () => {
+//   // const videoUrl = 'https://drive.google.com/drive/u/0/my-drive'; // Replace with your Google Drive video URL
+
+//   return (
+//     <View style={styles.container}>
+//       <ReactPlayer url='https://www.youtube.com/watch?v=XpEttvg3R3U' />
+//     </View>
+//   );
+// };
+
+// const styles = StyleSheet.create({
+//   container: {
+//     flex: 1,
+//   },
+// });
+
+// export default App;
 
 
 

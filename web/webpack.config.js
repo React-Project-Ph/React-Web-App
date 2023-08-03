@@ -26,9 +26,25 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
      },
      {
-      test: /\.(png|jpg|gif|mp4)$/,
+      test: /\.(png|jpg|gif)$/,
       use: 'file-loader',
     },
+    // {
+    //   test: /\.(js|jsx)$/,
+    //   exclude: /node_modules\/(?!react-native-webview)/,
+    //   use: {
+    //     loader: 'babel-loader',
+    //     options: {
+    //       presets: ['@babel/preset-env', '@babel/preset-react'],
+    //     },
+    //   },
+    // },
+    
+      {
+        test: /\.mp4$/,
+        use: 'file-loader',
+      },
+    
     ],
   },
   plugins: [

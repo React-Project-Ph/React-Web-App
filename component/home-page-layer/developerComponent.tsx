@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { Link } from 'react-scroll';
 import TextRotator from './TextRotator';
 
 
@@ -14,7 +15,15 @@ const DeveloperComponent = () => {
           </View>
             <View style = {{marginTop: 40, marginLeft: 230}}>
               <TouchableOpacity style={styles.button}>
-                <Text style={styles.buttonText}>View Works</Text>
+                <Link activeClass="active"
+                to="projectSection" 
+                spy={true}
+                smooth={true}
+                offset={-70} 
+                duration={500}
+              >
+                  <Text style={styles.buttonText}>View Works</Text>
+               </Link>
               </TouchableOpacity>
             </View>
         </View>

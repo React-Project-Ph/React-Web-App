@@ -6,6 +6,17 @@ import { Link } from 'react-scroll';
 
 class MyComponent extends Component {
   render() {
+    const pdfUrl = 'https://drive.google.com/file/d/1VhneOOo9hIxKNEo5TNDH4jlnyAvEQkwb/view?usp=drive_link'; // Replace with the actual PDF URL
+
+  const handleDownloadPDF = () => {
+    const link = document.createElement('a');
+    link.href = pdfUrl;
+    link.download = 'downloaded-file.pdf';
+    link.target = '_blank'; // Add this line for React Native web
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
     return (
       <View style={styles.baseText} >
         <View style={{marginLeft:360}}>
@@ -74,7 +85,7 @@ class MyComponent extends Component {
          </TouchableOpacity>
         </View>
         <View style={{marginLeft:275, marginTop: -10}}>
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={styles.button} onPress={handleDownloadPDF}>
         <Text style={styles.buttonText}>Download CV</Text>
         </TouchableOpacity>
         </View>

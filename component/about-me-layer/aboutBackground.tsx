@@ -1,8 +1,22 @@
 import React from 'react';
-import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
+import {View, Text, StyleSheet, TouchableOpacity, Image} from 'react-native';
+import { Link } from 'react-scroll';
+// import ReactPlayer from 'react-player'
+ import gif from './picslide.gif';
 
 
 const AboutBackgroud = () => {
+  const pdfUrl = 'https://drive.google.com/file/d/1VhneOOo9hIxKNEo5TNDH4jlnyAvEQkwb/view?usp=drive_link'; // Replace with the actual PDF URL
+
+  const handleDownloadPDF = () => {
+    const link = document.createElement('a');
+    link.href = pdfUrl;
+    link.download = 'downloaded-file.pdf';
+    link.target = '_blank'; // Add this line for React Native web
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <View>
       <View
@@ -11,20 +25,34 @@ const AboutBackgroud = () => {
           height: 650,
           backgroundColor: '#121212',
         }}>
+        <View style={{flex:2, flexDirection:'row'}} >
+        <View>
+        {/* <ReactPlayer url='https://www.youtube.com/watch?v=XpEttvg3R3U' width={500} height={400} /> */}
+        <Image source={gif} style={styles.gif} />
+        </View>
         <View style={{flex:1,flexDirection:'column'}}>
           <Text style={styles.text1} id="aboutSection">About Me</Text>
           <Text style={styles.text2}>For more than 5 years now, design has been the central piece of my world. On this fast and mind-blowing journey, I have moved over the years from being a visual designer to a full-time UX/UI thinker and designer. At the moment, this journey has brought me to Cloud Academy in Mendrisio, Switzerland where I am a full-time Product Designer. In this position, as with freelance, I am working remotely and I have been for approximately two years.</Text>
           <Text style={styles.text2}>For more than 5 years now, design has been the central piece of my world. On this fast and mind-blowing journey, I have moved over the years from being a visual designer to a full-time UX/UI thinker and designer. At the moment, this journey has brought me to Cloud Academy in Mendrisio, Switzerland where I am a full-time Product Designer. In this position, as with freelance, I am working remotely and I have been for approximately two years.</Text>
-          <View style = {{flex:1, flexDirection:'row', marginLeft: 700, marginTop: 40}}>
-            <TouchableOpacity style={styles.button1}>
+          <View style = {{flex:1, flexDirection:'row', marginLeft: 100, marginTop: 40}}>
+            <TouchableOpacity style={styles.button1} >
+            <Link activeClass="active"
+              to="contactSection" 
+              spy={true}
+              smooth={true}
+              offset={-70} 
+              duration={500}
+            >
               <Text style={styles.buttonText1}>H I R E  M E</Text>
+            </Link>
             </TouchableOpacity>
             <View style = {{marginLeft:30}}>
-            <TouchableOpacity style={styles.button2}>
-              <Text style={styles.buttonText2}>D O W N L O A D  C V</Text>
-            </TouchableOpacity>
+              <TouchableOpacity style={styles.button2} onPress={handleDownloadPDF}>
+                <Text style={styles.buttonText2}>D O W N L O A D  C V</Text>
+              </TouchableOpacity>
             </View>
           </View>
+        </View>
         </View>
            
       </View>
@@ -45,7 +73,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Baloo Paaji',
     fontSize: 40,
     fontWeight: '700',
-    marginLeft: 700,
+    marginLeft: 300,
     marginTop:20,
     marginBottom:30,
 
@@ -53,7 +81,7 @@ const styles = StyleSheet.create({
 
   text2: {
     color: '#B0A7A9',
-    marginLeft: 700,
+    marginLeft: 100,
     fontFamily: 'Poppins',
     fontSize: 20,
     fontWeight: '500',
@@ -98,6 +126,14 @@ const styles = StyleSheet.create({
     fontFamily: 'poppins',
     
   },
+
+  gif: {
+        width: 550,
+        height: 430,
+        marginLeft:100,
+        marginTop:90,
+        borderRadius: 20,
+      },
 
 });
 

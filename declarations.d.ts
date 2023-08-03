@@ -4,6 +4,11 @@ declare module '*.png' {
   }
 
   declare module '*.mp4' {
-    const src: string;
-    export default src;
+    const src: any;
+    export default value;
+  }
+
+  declare module '*.gif' {
+    const value: any;
+    export = value;
   }

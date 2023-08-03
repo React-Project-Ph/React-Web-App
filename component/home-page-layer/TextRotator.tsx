@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
 const TextRotator: React.FC = () => {
-  const textList = ['Web Designer & Developer', 'UI/UX Designer & Developer', 'Printed Circut Board Designer', 'Circuit Designer & Researcher', 'IOT System Designer & Developer', 'Full Stack Web Developer'];
+  const textList = ['Web Designer & Developer', 'UI/UX Designer & Developer', 'Printed Circut Board Designer', 'Circuit Designer & Researcher', 'IOT System Developer', 'Full Stack Web Developer', 'ML Algorithem Designer'];
   const [displayText, setDisplayText] = useState(textList[0]);
   const [index, setIndex] = useState(0);
 
